@@ -1,0 +1,21 @@
+
+
+quicksort(int[] arr, int l, int r) {
+	int pivot = arr[r];
+
+	int leftPoint = l;
+	int rightPoint = r;
+
+	while(leftPoint < rightPoint) {
+		while(arr[leftPoint] <= pivot && leftPoint < rightPoint)
+		{
+			leftPoint++;
+		}
+
+		while(arr[rightPoint] >= pivot && leftPoint < rightPoint) 
+		{
+			rightPoint--;
+		}
+	}
+
+}
